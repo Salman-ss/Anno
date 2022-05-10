@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+ 
+ <bean class="auto.wire.xml.Realme" name="realme">
+ 
+ 	<property name="mno" value="Realme-9Pro" />
+ 	<property name="color" value="White" />
+ 	<property name="price" value="18000" />
+ 	<property name="battery" value="5000" />
+ 
+ 
+ </bean>
+ 
+ <bean class="auto.wire.xml.Mobile" name="mobile" autowire="byType" />
+
+  
+ 
+
+ 
+ 
+ 
+ 
+ </beans>

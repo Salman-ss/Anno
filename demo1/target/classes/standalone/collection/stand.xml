@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd">    
+    
+ 	
+ 	<util:list list-class="java.util.Vector" id="other" >
+ 	
+ 		<value>Sabir</value>
+ 		<value>Salman</value>
+ 		<value>kadir</value>
+ 		<value>Sakib</value>
+ 		<value>Shahid</value>
+ 		<value>Subhan</value>
+ 		<value>Junaid</value>
+ 		<value>Saad</value>
+ 		<value>Zaid</value>
+ 	</util:list>
+ 	
+ 	<util:map id="datas" map-class="java.util.TreeMap" >
+ 	
+ 	<entry key="Sabir" value="26"  />
+ 	<entry key="Salman" value="24"  />
+ 	<entry key="Kadir" value="23"  />
+ 	<entry key="Junaid" value="23"  />
+ 	<entry key="Sakib" value="22"  />
+ 	<entry key="Shahid" value="20"  />
+ 	<entry key="Saad" value="20"  />
+ 	<entry key="Zaid" value="20"  />
+ 	<entry key="Moiz" value="22"  />
+ 	<entry key="Subhan" value="12"  />
+ 	
+ 	
+ 	
+ 	</util:map>
+ 	
+ 	
+ 	
+ 	<bean class="standalone.collection.Employee" name="sam">
+ 	
+ 	<property name="names" ref="other"/>
+ 	<property name="data" ref="datas" />
+ 	 
+ 
+ 	
+ 	
+ 	
+ 	</bean>
+ 
+ 
+ 
+ 
+ 
+ </beans>
